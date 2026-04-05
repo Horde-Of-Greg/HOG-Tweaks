@@ -1,4 +1,4 @@
-name: Spotless Formatting Check
+name: Spotless Check
 
 on:
   workflow_call:

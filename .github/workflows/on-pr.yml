@@ -1,4 +1,4 @@
-name: Run Tasks on PR
+name: PR Tasks
 
 on:
   pull_request:

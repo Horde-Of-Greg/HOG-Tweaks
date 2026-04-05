@@ -1,4 +1,4 @@
-name: Run Tasks on Commit
+name: Commit Tasks
 description: Only runs on specific files and branches.
 
 on:
