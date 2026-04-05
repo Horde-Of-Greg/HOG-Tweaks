@@ -1,0 +1,27 @@
+name: Build the Mod
+
+on:
+  workflow_call:
+
+jobs:
+  build:
+    name: Build Mod
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Build
+        uses: ./.github/actions/build_setup.yml
+
+      - name: Grant Permissions to Gradle Wrapper
+        run: chmod +x ./gradlew
+
+      - name: Build Project
+        run: ./gradlew build --warning-mode all
+
+      - name: Upload jars
+        uses: actions/upload-artifact@v4
+        with:
+          path: build/libs/*.jar
+          if-no-files-found: error
