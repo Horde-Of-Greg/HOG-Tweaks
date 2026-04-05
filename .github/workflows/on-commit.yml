@@ -1,4 +1,5 @@
-name: Bump, Build and Publish on Push to master
+name: Run Tasks on Commit
+description: Only runs on specific files and branches.
 
 on:
   push:
