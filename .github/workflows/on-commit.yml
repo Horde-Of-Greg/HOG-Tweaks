@@ -27,4 +27,6 @@ jobs:
 
   build:
     name: Build Mod
-    uses: ./.github/workflows/build.yml
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./.github/actions/build_mod
