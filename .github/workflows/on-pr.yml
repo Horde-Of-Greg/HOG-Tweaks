@@ -13,23 +13,16 @@ permissions:
 jobs:
   check:
     name: Run Checks
-    runs-on: ubuntu-latest
-    steps:
-      - name: Run Spotless
-        uses: ./.github/workflows/spotless.yml
+    uses: ./.github/workflows/spotless.yml
 
   build:
     name: Build Mod
-    runs-on: ubuntu-latest
-    needs: check
-    steps:
-      - name: Build Mod
-        uses: ./.github/workflows/build.yml
+    uses: ./.github/workflows/build.yml
 
   upload:
     name: Upload artifacts
     runs-on: ubuntu-latest
-    needs: build
+    needs: [build, check]
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4

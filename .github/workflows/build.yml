@@ -19,9 +19,3 @@ jobs:
 
       - name: Build Project
         run: ./gradlew build --warning-mode all
-
-      - name: Upload jars
-        uses: actions/upload-artifact@v4
-        with:
-          path: build/libs/*.jar
-          if-no-files-found: error
