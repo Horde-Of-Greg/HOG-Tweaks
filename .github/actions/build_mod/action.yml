@@ -1,0 +1,28 @@
+name: Build
+description: Build the mod, and upload the artifacts.
+
+runs:
+  using: "composite"
+  steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Setup Build
+      uses: ./.github/actions/build_setup
+
+    - name: Grant Permissions to Gradle Wrapper
+      run: chmod +x ./gradlew
+      shell: bash
+
+    - name: Build Project
+      run: ./gradlew build --warning-mode all
+      shell: bash
+
+    - name: Upload Artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: Built Jars
+        path: |
+          ./build/libs/*.jar
+        if-no-files-found: error
+        compression-level: 0

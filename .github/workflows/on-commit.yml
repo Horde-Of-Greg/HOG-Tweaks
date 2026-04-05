@@ -1,0 +1,36 @@
+name: Commit Tasks
+description: Only runs on specific files and branches.
+
+on:
+  push:
+    branches:
+      - master
+    paths-ignore:
+      - ".gitignore"
+      - ".github/**"
+      - "README.md"
+      - "LICENSE"
+      - "CONTRIBUTING.md"
+      - "CODE_OF_CONDUCT.md"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: on-push-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    name: Run Checks
+    uses: ./.github/workflows/spotless.yml
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Build the Mod
+        uses: ./.github/actions/build_mod
