@@ -2,7 +2,7 @@
 <p align="center"><i>A simple mod to fix/tweak mod behaviors to what I want them to be like.</i></p>
 <h1 align="center">
     <a href="https://github.com/D-Alessian/Taos-1-12-Tweaks/blob/master/LICENSE"><img src="https://img.shields.io/github/license/D-Alessian/Taos-1-12-Tweaks" alt="License"></a>
-    <a href="https://github.com/D-Alessian/Taos-1-12-Tweaks/graphs/commit-activity"><img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" alt="Maintained Status"></a>
+    <a href="https://github.com/D-Alessian/Taos-1-12-Tweaks/graphs/commit-activity"><img src="https://img.shields.io/badge/Maintained%3F-no-red.svg" alt="Maintained Status"></a>
 </h1>
 
 ## Welcome to Taos 1.12 Tweaks!
