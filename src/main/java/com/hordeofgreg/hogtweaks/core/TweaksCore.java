@@ -1,4 +1,4 @@
-package be.alessian.taotweaks.core;
+package com.hordeofgreg.hogtweaks.core;
 
 import java.util.List;
 import java.util.Map;
@@ -7,12 +7,12 @@ import net.minecraftforge.fml.relauncher.IFMLLoadingPlugin;
 
 import com.google.common.collect.ImmutableList;
 
-import be.alessian.taotweaks.Tags;
+import com.hordeofgreg.hogtweaks.Tags;
 import zone.rong.mixinbooter.IEarlyMixinLoader;
 
-@IFMLLoadingPlugin.Name("TaoTweaksCore")
+@IFMLLoadingPlugin.Name("HOGTweaksCore")
 @IFMLLoadingPlugin.MCVersion("1.12.2")
-@IFMLLoadingPlugin.TransformerExclusions({ "be.alessian.taotweaks.core" })
+@IFMLLoadingPlugin.TransformerExclusions({ "com.hordeofgreg.hogtweaks.core" })
 public class TweaksCore implements IFMLLoadingPlugin, IEarlyMixinLoader {
 
     @Override

@@ -1,13 +1,13 @@
-package be.alessian.taotweaks.common;
+package com.hordeofgreg.hogtweaks.common;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-import be.alessian.taotweaks.Tags;
-import be.alessian.taotweaks.config.TweaksConfig;
-import be.alessian.taotweaks.helper.OreDictExporter;
+import com.hordeofgreg.hogtweaks.Tags;
+import com.hordeofgreg.hogtweaks.config.TweaksConfig;
+import com.hordeofgreg.hogtweaks.helper.OreDictExporter;
 
 @Mod.EventBusSubscriber(modid = Tags.MODID)
 public class CommonProxy {

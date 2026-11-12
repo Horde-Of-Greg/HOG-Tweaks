@@ -1,4 +1,4 @@
-package be.alessian.taotweaks.mixin.discordintegration;
+package com.hordeofgreg.hogtweaks.mixin.discordintegration;
 
 import net.dv8tion.jda.api.JDABuilder;
 
@@ -6,8 +6,8 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
 
-import be.alessian.taotweaks.config.TweaksConfig;
 import de.erdbeerbaerlp.dcintegration.common.Discord;
+import com.hordeofgreg.hogtweaks.config.TweaksConfig;
 
 /**
  * This mixin class changes the default behavior of the common Discord Class used by all of ErdbeerbaerLP's discord

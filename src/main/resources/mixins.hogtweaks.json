@@ -1,0 +1,10 @@
+{
+  "package": "com.hordeofgreg.hogtweaks.mixin",
+  "refmap": "mixins.hogtweaks.refmap.json",
+  "target": "@env(DEFAULT)",
+  "minVersion": "0.8",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [],
+  "client": [],
+  "server": ["discordintegration.DiscordMixin"]
+}

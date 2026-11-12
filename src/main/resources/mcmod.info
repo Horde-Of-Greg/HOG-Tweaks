@@ -1,11 +1,11 @@
 [{
     "modid": "${modid}",
     "name": "${modname}",
-    "description": "An example mod for Minecraft 1.12.2 with Forge",
+    "description": "Minecraft 1.12.2 tweaks, fixes, and utilities for Horde Of Greg.",
     "version": "${version}",
     "mcversion": "${mcversion}",
     "logoFile": "",
-    "url": "",
+    "url": "https://github.com/Horde-Of-Greg/HOG-Tweaks",
     "authorList": [],
     "credits": "",
     "dependencies": []

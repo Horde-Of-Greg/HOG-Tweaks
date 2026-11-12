@@ -1,4 +1,4 @@
-package be.alessian.taotweaks;
+package com.hordeofgreg.hogtweaks;
 
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
@@ -9,22 +9,22 @@ import net.minecraftforge.fml.common.event.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import be.alessian.taotweaks.common.CommonProxy;
-import be.alessian.taotweaks.config.TweaksConfig;
+import com.hordeofgreg.hogtweaks.common.CommonProxy;
+import com.hordeofgreg.hogtweaks.config.TweaksConfig;
 
 @Mod(modid = Tags.MODID,
      version = Tags.VERSION,
      name = Tags.MODNAME,
      acceptedMinecraftVersions = "[1.12.2]",
      acceptableRemoteVersions = "*")
-public class TaoTweaks {
+public class HOGTweaks {
 
     public static final String MODID = Tags.MODID;
     public static final Logger LOGGER = LogManager.getLogger(MODID);
 
     @SidedProxy(modId = MODID,
-                clientSide = "be.alessian.taotweaks.common.CommonProxy",
-                serverSide = "be.alessian.taotweaks.common.CommonProxy")
+                clientSide = "com.hordeofgreg.hogtweaks.common.CommonProxy",
+                serverSide = "com.hordeofgreg.hogtweaks.common.CommonProxy")
     public static CommonProxy proxy;
 
     @EventHandler

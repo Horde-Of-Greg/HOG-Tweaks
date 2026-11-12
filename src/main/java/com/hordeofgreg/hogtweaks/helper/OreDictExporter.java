@@ -1,4 +1,4 @@
-package be.alessian.taotweaks.helper;
+package com.hordeofgreg.hogtweaks.helper;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -6,7 +6,7 @@ import java.io.FileWriter;
 
 import net.minecraftforge.oredict.OreDictionary;
 
-import be.alessian.taotweaks.TaoTweaks;
+import com.hordeofgreg.hogtweaks.HOGTweaks;
 
 public class OreDictExporter {
 
@@ -23,14 +23,14 @@ public class OreDictExporter {
                 writer.newLine();
 
                 if (i % (total / 10) == 0) {
-                    TaoTweaks.LOGGER.info("Progress: {}%", (i * 100) / total);
+                    HOGTweaks.LOGGER.info("Progress: {}%", (i * 100) / total);
                 }
             }
 
             writer.close();
-            TaoTweaks.LOGGER.info("Export complete: {}", outputPath);
+            HOGTweaks.LOGGER.info("Export complete: {}", outputPath);
         } catch (Exception e) {
-            TaoTweaks.LOGGER.error("Export failed", e);
+            HOGTweaks.LOGGER.error("Export failed", e);
         }
     }
 }

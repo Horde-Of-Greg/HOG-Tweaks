@@ -1,8 +1,8 @@
-package be.alessian.taotweaks.config;
+package com.hordeofgreg.hogtweaks.config;
 
 import net.minecraftforge.common.config.Config;
 
-import be.alessian.taotweaks.Tags;
+import com.hordeofgreg.hogtweaks.Tags;
 
 @Config(modid = Tags.MODID)
 public class TweaksConfig {
@@ -31,8 +31,8 @@ public class TweaksConfig {
         @Config.Name("enableExport")
         public boolean enableExport = false;
 
-        @Config.Comment("Output path for the OreDictionary export file. [Default: taostweaks/storage/oredic_dump.txt]")
+        @Config.Comment("Output path for the OreDictionary export file. [Default: hogtweaks/storage/oredic_dump.txt]")
         @Config.Name("outputPath")
-        public String outputPath = "taostweaks/storage/oredic_dump.txt";
+        public String outputPath = "hogtweaks/storage/oredic_dump.txt";
     }
 }
