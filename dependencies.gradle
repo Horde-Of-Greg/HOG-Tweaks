@@ -39,4 +39,10 @@
  */
 dependencies {
     compileOnly(rfg.deobf("curse.maven:dcintegration-324952:4034508"))
+
+    devOnlyNonPublishable(rfg.deobf("curse.maven:better-builders-wands-238403:2691084"))
+    devOnlyNonPublishable(rfg.deobf("curse.maven:projecte-226410:2702991"))
+
+    // for compat with MeatballCraft, since it uses this mod, which adds mixins to Better Builder's Wands
+    devOnlyNonPublishable(rfg.deobf("curse.maven:betterbuilderswandsfix-1198068:7493228"))
 }

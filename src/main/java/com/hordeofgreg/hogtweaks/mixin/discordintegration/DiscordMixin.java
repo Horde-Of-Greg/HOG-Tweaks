@@ -6,8 +6,9 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
 
-import de.erdbeerbaerlp.dcintegration.common.Discord;
 import com.hordeofgreg.hogtweaks.config.TweaksConfig;
+
+import de.erdbeerbaerlp.dcintegration.common.Discord;
 
 /**
  * This mixin class changes the default behavior of the common Discord Class used by all of ErdbeerbaerLP's discord
