@@ -19,9 +19,9 @@ public class TweaksConfig {
     public static class BuilderWands {
 
         @Config.Comment({
-            "Allow Better Builder's Wands to pull items from a Project E network.",
-            "This will only work if you have Project E installed, even if set to true.",
-            "[Default: true]"
+                "Allow Better Builder's Wands to pull items from a Project E network.",
+                "This will only work if you have Project E installed, even if set to true.",
+                "[Default: true]"
         })
         @Config.Name("wandsCanUseEMC")
         public boolean wandsCanUseEmc = true;

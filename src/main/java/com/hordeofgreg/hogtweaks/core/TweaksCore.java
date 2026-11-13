@@ -6,8 +6,8 @@ import java.util.Map;
 import net.minecraftforge.fml.relauncher.IFMLLoadingPlugin;
 
 import com.google.common.collect.ImmutableList;
-
 import com.hordeofgreg.hogtweaks.Tags;
+
 import zone.rong.mixinbooter.IEarlyMixinLoader;
 
 @IFMLLoadingPlugin.Name("HOGTweaksCore")

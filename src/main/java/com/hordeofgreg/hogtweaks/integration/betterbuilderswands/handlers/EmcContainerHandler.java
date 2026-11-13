@@ -1,16 +1,19 @@
 package com.hordeofgreg.hogtweaks.integration.betterbuilderswands.handlers;
 
-import com.hordeofgreg.hogtweaks.config.TweaksConfig;
-import com.hordeofgreg.hogtweaks.integration.projecte.EmcSyncManager;
-import moze_intel.projecte.api.ProjectEAPI;
-import moze_intel.projecte.api.capabilities.IKnowledgeProvider;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
+
+import com.hordeofgreg.hogtweaks.config.TweaksConfig;
+import com.hordeofgreg.hogtweaks.integration.projecte.EmcSyncManager;
+
+import moze_intel.projecte.api.ProjectEAPI;
+import moze_intel.projecte.api.capabilities.IKnowledgeProvider;
 import portablejim.bbw.api.IContainerHandlerSpecial;
 
 public class EmcContainerHandler implements IContainerHandlerSpecial {
+
     final EmcSyncManager syncManager;
 
     public EmcContainerHandler(EmcSyncManager syncManager) {
@@ -104,21 +107,18 @@ public class EmcContainerHandler implements IContainerHandlerSpecial {
     }
 
     private static class EmcOperation {
+
         final EntityPlayer player;
         ItemStack requestedStack = ItemStack.EMPTY;
 
         EmcOperation(EntityPlayer player) {
             this.player = player;
         }
-
     }
 
     private boolean ignoreItem(ItemStack item, IKnowledgeProvider knowledge) {
-        return item.isEmpty()
-                || !(item.getItem() instanceof ItemBlock)
-                || item.hasTagCompound()
-                || knowledge == null
-                || !knowledge.hasKnowledge(item);
+        return item.isEmpty() || !(item.getItem() instanceof ItemBlock) || item.hasTagCompound() || knowledge == null ||
+                !knowledge.hasKnowledge(item);
     }
 
     private IKnowledgeProvider getKnowledge(EntityPlayer player) {

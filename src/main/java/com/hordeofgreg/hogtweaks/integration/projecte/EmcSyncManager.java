@@ -1,15 +1,17 @@
 package com.hordeofgreg.hogtweaks.integration.projecte;
 
-import moze_intel.projecte.api.ProjectEAPI;
-import moze_intel.projecte.api.capabilities.IKnowledgeProvider;
+import java.util.HashSet;
+import java.util.Set;
+
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
 
-import java.util.HashSet;
-import java.util.Set;
+import moze_intel.projecte.api.ProjectEAPI;
+import moze_intel.projecte.api.capabilities.IKnowledgeProvider;
 
 public class EmcSyncManager {
+
     private final Set<EntityPlayerMP> playersPendingSync = new HashSet<>();
 
     public void markDirty(EntityPlayerMP player) {
