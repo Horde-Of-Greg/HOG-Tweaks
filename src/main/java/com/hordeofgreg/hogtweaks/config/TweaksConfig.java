@@ -7,11 +7,25 @@ import com.hordeofgreg.hogtweaks.Tags;
 @Config(modid = Tags.MODID)
 public class TweaksConfig {
 
+    @Config.Name("Better Builder's Wands")
+    public static BuilderWands BuilderWands = new BuilderWands();
+
     @Config.Name("advanced")
     public static Advanced advanced = new Advanced();
 
     @Config.Name("oreDictExport")
     public static OreDictExport oreDictExport = new OreDictExport();
+
+    public static class BuilderWands {
+
+        @Config.Comment({
+            "Allow Better Builder's Wands to pull items from a Project E network.",
+            "This will only work if you have Project E installed, even if set to true.",
+            "[Default: true]"
+        })
+        @Config.Name("wandsCanUseEMC")
+        public boolean wandsCanUseEmc = true;
+    }
 
     public static class Advanced {
 
