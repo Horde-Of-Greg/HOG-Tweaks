@@ -4,10 +4,9 @@ description: Only runs on specific files and branches.
 on:
   push:
     branches:
-      - master
+      - main
     paths-ignore:
       - ".gitignore"
-      - ".github/**"
       - "README.md"
       - "LICENSE"
       - "CONTRIBUTING.md"
